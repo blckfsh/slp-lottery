@@ -426,7 +426,7 @@ function Main() {
   }, [])
 
   const singleSolution = useCallback(async (currentBlock) => {
-    try {
+    // try {
       const web3 = window.web3 // initialize web3js
       const tokenData = await loadTokenAddress()
       const address = tokenData.address
@@ -500,10 +500,10 @@ function Main() {
             }
           })
       }
-    } catch (error) {
-      console.log(error)
+    // } catch (error) {
+    //   console.log(error)
       // console.log('Something went wrong - singleSolution please check')
-    }
+    // }
 
     //eslint-disable-next-line
   }, [])
