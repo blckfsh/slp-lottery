@@ -445,10 +445,10 @@ function Main() {
       // console.log('what block we are getting: ' + currentBlock)
       // console.log('single: ' + blockIdRef.current)
 
-      if (currentBlock > 0 && block != null) {
+      if ((currentBlock > 0) && (block != null)) {
         // console.log('number of transactions fetched: ' + block.length)
         // console.log(block)
-        await axios.patch(`${process.env.REACT_APP_BLOCK_API}/${blockIdRef.current}`, newBlock)
+          await axios.patch(`${process.env.REACT_APP_BLOCK_API}/${blockIdRef.current}`, newBlock)
 
           block.map(async (item) => {
             let hash = await web3.eth.getBlock(item.blockNumber)
