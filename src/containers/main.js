@@ -658,7 +658,7 @@ function Main() {
                   singleSolution(blockRef.current)
                   fetchTransactions()
                   fetchPlayerEntries()
-                }, 300000)
+                }, 120000)
 
                 return async () => await clearIntervalAsync(timer)
               } else {
