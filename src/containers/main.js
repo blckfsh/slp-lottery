@@ -500,8 +500,9 @@ function Main() {
             }
           })
       }
-    } catch {
-      console.log('Something went wrong - singleSolution please check')
+    } catch (error) {
+      console.error();
+      // console.log('Something went wrong - singleSolution please check')
     }
 
     //eslint-disable-next-line
