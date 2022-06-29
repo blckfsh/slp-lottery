@@ -501,7 +501,7 @@ function Main() {
           })
       }
     } catch (error) {
-      console.error();
+      console.log(error)
       // console.log('Something went wrong - singleSolution please check')
     }
 
