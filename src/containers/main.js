@@ -620,6 +620,8 @@ function Main() {
           if (window.ethereum) {
             try {
               const accounts = await window.ethereum.request({ method: 'eth_requestAccounts' })
+              console.log("current: " + accounts)
+              console.log("first load: " + blockRef.current)
               setLoadAccounts(accounts)
 
               if (accounts.length > 0) {
@@ -650,12 +652,13 @@ function Main() {
                             })
                             .catch(error => console.error)
                   }
+                  console.log("per interval: " + blockRef.current)
                   fetchPortion()
                   getLotteryPool()
                   singleSolution(blockRef.current)
                   fetchTransactions()
                   fetchPlayerEntries()
-                }, 60000)
+                }, 20000)
 
                 return async () => await clearIntervalAsync(timer)
               } else {
