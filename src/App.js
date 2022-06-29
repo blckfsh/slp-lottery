@@ -12,11 +12,11 @@ function App() {
 
   return (
     <Router>
-      <Routes>
-        <Route path="/" element={<Main />} />
-        <Route path="/config" element={<Config />} />
-      </Routes>
-    </Router>
+        <Routes>
+          <Route path="/" element={<Main />} />
+          <Route path="/config" element={<Config />} />
+        </Routes>
+      </Router>   
   );
 }
 

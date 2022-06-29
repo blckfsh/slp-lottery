@@ -1,5 +1,5 @@
 import DatePicker from 'react-datepicker'
-import { useContext } from 'react'
+import  React, { useContext } from 'react'
 import { ContractContext } from '../../containers/config'
 
 import 'react-datepicker/dist/react-datepicker.css'

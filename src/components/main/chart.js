@@ -1,6 +1,8 @@
 function Chart() {
   return (
-    <div className="cx-placeholder">&nbsp;</div>
+    <div>
+      <div className="cx-placeholder">&nbsp;</div>
+    </div>    
   )
 }
 

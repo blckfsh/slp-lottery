@@ -1,4 +1,4 @@
-import { useContext } from 'react'
+import  React, { useContext } from 'react'
 import Modal from 'react-modal'
 import { ContractContext } from '../../containers/main'
 
